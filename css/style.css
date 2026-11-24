@@ -1,8 +1,14 @@
+:root {
+    --charcoal-black: #414141;
+    --orange: #ff3c15;
+    --white: #ffffff;
+}
+
 body {
     font-family: 'HK-Grotesk-Medium', sans-serif;
     font-size: 18px;
     line-height: 1.5;
-    color: #414141;
+    color: var(--charcoal-black);
     background-image: url(../images/background.jpg);
     background-size: 100% auto;
     background-position: center top;
@@ -15,29 +21,28 @@ li {
 
 a {
     text-decoration: none;
-    color: #414141;
 }
 
 .heading {
-    color: #fff;
+    color: var(--white);
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 3px;
-    -webkit-text-stoke-color: #fff;
+    -webkit-text-stoke-color: var(--white);
     font-family: 'HK-Grotesk-Bold', sans-serif;
     font-size: 110px;
 }
 
 .heading-orange {
     font-size: 120px;
-    -webkit-text-stroke-color: #ff3c15;
+    -webkit-text-stroke-color: var(--orange);
     margin-bottom: 3rem;
-    color: #ff3c15;
+    color: var(--orange);
 }
 
 .button {
     display: inline-block;
-    background-color: #ff3c15;
-    color: #fff;
+    background-color: var(--orange);
+    color: var(--white);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     border: none;
