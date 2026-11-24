@@ -17,3 +17,23 @@ a {
     text-decoration: none;
     color: #414141;
 }
+
+.heading {
+    color: #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stoke-color: #fff;
+    font-family: 'HK-Grotesk-Bold', sans-serif;
+    font-size: 110px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #ff3c15;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: none;
+    padding: 24px 72px;
+    font-family: 'HK-Grotesk-Bold', sans-serif;
+}
