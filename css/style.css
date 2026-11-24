@@ -27,6 +27,13 @@ a {
     font-size: 110px;
 }
 
+.heading-orange {
+    font-size: 120px;
+    -webkit-text-stroke-color: #ff3c15;
+    margin-bottom: 3rem;
+    color: #ff3c15;
+}
+
 .button {
     display: inline-block;
     background-color: #ff3c15;
