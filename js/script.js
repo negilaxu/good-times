@@ -23,3 +23,16 @@ inView(".fade")
     const frontEl = document.querySelector(".front");
     frontEl.classList.add("slide-up");
   });
+
+  const anchors = document.querySelectorAll("a");
+  anchors.forEach((anchor) => {
+    anchor.addEventListener("click", (event) => {
+      const href = anchor.getAttribute("href");
+      if (href.charAt(0) === "#") {
+        event.preventDefault();
+        document.querySelector(href).scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+    });
+  });
