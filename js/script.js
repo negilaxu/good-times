@@ -16,3 +16,10 @@ VanillaTilt.init(document.querySelectorAll(".image"), {
 inView(".fade")
   .on("enter", (img) => img.classList.add("visible"))
   .on("exit", (img) => img.classList.remove("visible"));
+
+  const registerButton = document.querySelector(".register-button");
+  registerButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    const frontEl = document.querySelector(".front");
+    frontEl.classList.add("slide-up");
+  });
