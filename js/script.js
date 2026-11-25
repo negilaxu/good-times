@@ -12,3 +12,7 @@ VanillaTilt.init(document.querySelectorAll(".image"), {
   max: 25,
   speed: 400,
 });
+
+inView(".fade")
+  .on("enter", (img) => img.classList.add("visible"))
+  .on("exit", (img) => img.classList.remove("visible"));
